@@ -414,6 +414,9 @@ img {
 .experience__content {
   display: flex;
 }
+.experience__content,.certificate__content {
+  width: 90%;
+}
 
 .education__time,
 .experience__time {
