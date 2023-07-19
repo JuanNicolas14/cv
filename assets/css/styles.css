@@ -214,7 +214,7 @@ img {
 
 /*========== CLASS CSS ==========*/
 .section {
-  padding: 1.5rem 0;
+  padding: 10px 0;
 }
 
 .section-title {
@@ -224,7 +224,7 @@ img {
   text-transform: uppercase;
   letter-spacing: .35rem;
   text-align: center;
-  margin-bottom: var(--mb-3);
+  margin-bottom: 10px;
 }
 /*========== LAYOUT ==========*/
 .bd-container {
@@ -255,6 +255,11 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.home .home__data .home__img {
+  width: 100px;
+  height: 100px;
 }
 
 @media screen and (max-width: 968px) {
@@ -405,8 +410,15 @@ img {
 }
 
 /*========== PROFILE ==========*/
+section.profile {
+  padding: 10px 0;
+}
+section.profile h2 {
+  margin: 10px 0;
+}
 .profile__description {
   text-align: center;
+  font-size: .75rem;
 }
 
 /*========== EDUCATION AND EXPERIENCE ==========*/
@@ -455,22 +467,50 @@ img {
 
 .education__studies,
 .experience__company {
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
   color: var(--title-color);
 }
+
+.experience__description {
+  display: flex;
+}
+.experience__description div {
+  width: 45%;
+  padding: 0 15px;
+}
+.experience__description ul {
+  font-size: .70rem;
+}
+.experience__description h5, .experience__content h4 {
+  margin: 5px;
+}
+
+.experience__content h4 {
+  font-size: .85rem;
+}
+
 
 .education__year {
   font-size: var(--smaller-font-size);
 }
 
 /*========== SKILLS AND LANGUAGES ==========*/
-.skills__content,
-.languages__content {
-  grid-template-columns: repeat(2, 1fr);
+.languages {
+  width: 90%;
 }
 
 .languages__content {
-  gap: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.languages__content div {
+  width: 36%;
+}
+.languages__content div h3 {
+  font-size: .9rem;
+}
+.languages__content ul{
+  font-size: .75rem;
 }
 
 .skills__name,
